@@ -1,0 +1,24 @@
+<div class="login-container">
+    <h2>Login</h2>
+    <form >
+      <div>
+        <label for="username">Email:</label>
+        <input type="email" [(ngModel)]="email" name="email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" [(ngModel)]="password" name="password" required>
+      </div>
+      <button type="button " class="btn btn-info" (click)="login()" >Login</button>
+      
+      <div class="row">
+        <div class ="col-6">
+          <a [routerLink] = "['/register']" style="text-decoration: none;">Need Account ?<span class="text-danger">Register</span></a>
+        </div>
+        <div class="col-6">
+          <a href="" class="text-dark">Forget Password</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  
